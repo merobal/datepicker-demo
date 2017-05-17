@@ -1,3 +1,9 @@
 <h1>
   {{title}}
 </h1>
+
+<mat-input-container>
+    <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+    <button matSuffix [matDatepickerToggle]="picker"></button>
+</mat-input-container>
+<mat-datepicker #picker></mat-datepicker>
